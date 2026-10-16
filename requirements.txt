@@ -1,0 +1,2 @@
+# Runtime dependencies. Source of truth: [project.dependencies] in pyproject.toml.
+-e .

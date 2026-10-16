@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "note": "Curated SAMPLE for demonstration and tests. Not exhaustive: use a live feed (OSV, GitHub Advisory Database) for real assessments. Ranges follow OSV semantics: introduced <= version < fixed.",
+  "advisories": [
+    {
+      "id": "CVE-2023-32681",
+      "ecosystem": "PyPI",
+      "package": "requests",
+      "ranges": [{ "introduced": "2.3.0", "fixed": "2.31.0" }],
+      "severity": "medium",
+      "cvss": 6.1,
+      "summary": "Requests can leak Proxy-Authorization headers to the destination server when redirected to an HTTPS endpoint.",
+      "references": [
+        "https://github.com/psf/requests/security/advisories/GHSA-j8r2-6x86-q33q",
+        "https://nvd.nist.gov/vuln/detail/CVE-2023-32681"
+      ]
+    },
+    {
+      "id": "CVE-2020-14343",
+      "ecosystem": "PyPI",
+      "package": "PyYAML",
+      "ranges": [{ "introduced": "5.1", "fixed": "5.4" }],
+      "severity": "critical",
+      "cvss": 9.8,
+      "summary": "PyYAML full_load/FullLoader can execute arbitrary code when processing untrusted YAML (incomplete fix for CVE-2020-1747).",
+      "references": ["https://osv.dev/CVE-2020-14343"]
+    },
+    {
+      "id": "CVE-2023-43804",
+      "ecosystem": "PyPI",
+      "package": "urllib3",
+      "ranges": [{ "fixed": "1.26.17" }, { "introduced": "2.0.0", "fixed": "2.0.6" }],
+      "severity": "medium",
+      "cvss": 5.9,
+      "summary": "The Cookie HTTP header is not stripped on cross-origin redirects.",
+      "references": ["https://osv.dev/CVE-2023-43804"]
+    },
+    {
+      "id": "CVE-2021-23337",
+      "ecosystem": "npm",
+      "package": "lodash",
+      "ranges": [{ "fixed": "4.17.21" }],
+      "severity": "high",
+      "cvss": 7.2,
+      "summary": "Command injection through the template function in lodash versions before 4.17.21.",
+      "references": ["https://osv.dev/vulnerability/CVE-2021-23337"]
+    }
+  ]
+}

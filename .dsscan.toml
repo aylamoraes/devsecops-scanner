@@ -1,0 +1,7 @@
+# Self-scan configuration (dogfooding: the scanner scans its own repository in CI).
+#
+# "tests" is excluded because the suite deliberately contains insecure code samples
+# (they are the inputs of the SAST rule tests). Sample secrets are built at runtime,
+# so they never appear as literals in the repository.
+exclude = ["tests"]
+fail_on = "high"
