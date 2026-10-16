@@ -30,9 +30,7 @@ def result() -> ScanResult:
             make_finding(rule_id="SAST-004", severity=Severity.MEDIUM, line=3, cwe="CWE-327"),
             make_finding(rule_id="SECRET-JWT", severity=Severity.LOW, line=7, cwe=None),
         ),
-        issues=(
-            ScanIssue(level=IssueLevel.WARNING, source="sast", path="bad.py", message="oops"),
-        ),
+        issues=(ScanIssue(level=IssueLevel.WARNING, source="sast", path="bad.py", message="oops"),),
         files_scanned=12,
         suppressed=3,
     )

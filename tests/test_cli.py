@@ -251,7 +251,6 @@ class TestInvalidOptionValues:
         assert "invalid command-line options" in capsys.readouterr().err
 
 
-
 class TestBrokenPipe:
     """``dsscan ... | head`` must not print a traceback."""
 
